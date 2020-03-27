@@ -20,7 +20,7 @@ import java.util.Scanner;
 public class Task1_2 {
 
     public static final String URL = "https://api.privatbank.ua/p24api/exchange_rates?json&date=";
-    private static final String INPUT_DATE_FORMAT = "dd.MM.yyyy";
+    public static final String INPUT_DATE_FORMAT = "dd.MM.yyyy";
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
