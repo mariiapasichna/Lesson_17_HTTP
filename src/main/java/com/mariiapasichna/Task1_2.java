@@ -26,9 +26,11 @@ public class Task1_2 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please, enter a date in the pattern \"dd.mm.yyyy\"");
         String date = scanner.nextLine();
-        checkDate(date);
-        requestHttpURLConnection(date);
-        requestOkHttp(date);
+        String inputDate = checkDate(date);
+        if (inputDate != null){
+            requestHttpURLConnection(inputDate);
+            requestOkHttp(inputDate);
+        }
     }
 
     private static void requestHttpURLConnection(String date) {
